@@ -18,7 +18,6 @@
 //         let lefting = document.querySelector('.left__img');
 //         let righting = document.querySelector('.right__img');
 //         let headerMenu = document.querySelector('.header__menu');
-//         let nextPageURL = this.getAttribute('href');
 //         setTimeout(function() {
 //             let black = document.querySelector('.black')
 //             black.style.opacity = '1'
@@ -26,12 +25,11 @@
 //             lefting.style.display = 'none'
 //             righting.style.display = 'none'
 //             headerMenu.style.display = 'none'
-//             window.location.href = nextPageURL
+//             window.location.href = href
 //         }, 500)
 //     })
 // }
 let tasks = document.querySelectorAll('.task');
-
 for (let i = 0; i < tasks.length; i++) {
     tasks[i].addEventListener('click', function(event) {
         event.preventDefault(); // Отменяем стандартное действие ссылки
