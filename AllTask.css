@@ -1,3 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+:root {
+    --boss: rgb(160, 160, 160);
+    --colors: rgb(210, 198, 198);
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 body {
     overflow-x: hidden;
     overflow-y: scroll;
@@ -5,7 +83,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background: red; */
 }
 .black {
     position: absolute;
@@ -44,6 +121,7 @@ body {
     background: #c5a61bd0;
     color: white;
     margin-left: 20px;
+    font-family: Arial;
 }
 .open {
     font-size: 24px;
@@ -52,6 +130,7 @@ body {
     cursor: pointer;
     background: #c5a61bd0;
     color: white;
+    font-family: Arial;
 }
 .open-in-text-document {
     font-size: 24px;
@@ -60,17 +139,18 @@ body {
     cursor: pointer;
     background: #c5a61bd0;
     color: white;
+    font-family: Arial;
 }
 .download:hover, .open:hover, .open-in-text-document:hover {
     /* background: #0d402d; */
     background: #e4bb05;
     box-shadow: 0 0 20px rgb(255, 106, 0);
-    border: 2px solid rgb(255, 106, 0);
+    /* border: 1px solid rgb(255, 106, 0); */
 }
 .main {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    /* gap: 50px; */
     margin-top: 50px;
 }
 .task {
@@ -84,6 +164,7 @@ body {
     font-weight: 900;
     font-size: 24px;
     margin: 0 20px 0 20px;
+    margin-bottom: 50px;
     /* -webkit-text-stroke: 0.05px rgb(255, 255, 255); */
 }
 /* Цвет полосы прокрутки */

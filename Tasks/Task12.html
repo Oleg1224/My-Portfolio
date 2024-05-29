@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цикли</title>
+    <link rel="stylesheet" href="../AllTask.css">
+</head>
+<body>
+    <div class="black"></div>
+    <header class="header">
+        <div class="header__title">Цикли</div>
+        <div class="header__optional">
+            <a class="download" href="./img/1476137403-80000000000255726-1920x1080.jpg" download="">Download</a>
+            <a class="open">Open</a>
+            <a class="open-in-text-document">Open in text document</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="task">Напишіть функцію, яка отримує об'єкт з ім'ям, прізвищем та віком та використовує деструктуризацію
+            для повернення рядка, що містить інформацію про цю людину в такому форматі: "Мене звати Ім'я Прізвище і мені Вік
+            років".
+            const person = {
+            name: 'Nelli',
+            surname: 'Laroy',
+            age: 25
+            };
+            console.log(personInfo(person));</div>
+        <div class="task">Напишіть функцію, яка отримує масив об'єктів з інформацією про товари (назва, ціна, кількість) та
+            використовує деструктуризацію для обчислення загальної вартості товарів.
+            const items = [
+            { name: 'Футболка', price: 250, quantity: 2 },
+            { name: 'Джинси', price: 800, quantity: 1 },
+            { name: 'Кросівки', price: 1200, quantity: 1 }
+            ];</div>
+        <div class="task">Напиши функцію countProps(obj), яка рахує кількість властивостей в об'єкті. Функція повертає число -
+            кількість властивостей.
+            const countProps = function (obj) {
+            // твій код
+            };</div>
+        <div class="task">Напиши функцію findBestEmployee(employees), яка приймає об'єкт співробітників і повертає ім'я
+            найпродуктивнішого (який виконав більше всіх задач). Співробітники і кількість виконаних завдань містяться як
+            властивості об'єкта в форматі "ім'я":"кількість задач".
+        
+            const findBestEmployee = function (employees) {
+            // твій код
+            };
+        
+            /*
+            * Викличи функції для перевірки працездатності твоєї реалізації.
+            */
+            console.log(
+            findBestEmployee({
+            ann: 29,
+            david: 35,
+            helen: 1,
+            lorence: 99,
+            }),
+            ); // lorence
+            
+            console.log(
+            findBestEmployee({
+            poly: 12,
+            mango: 17,
+            ajax: 4,
+            }),
+            ); // mango
+            
+            console.log(
+            findBestEmployee({
+            lux: 147,
+            david: 21,
+            kiwi: 19,
+            chelsy: 38,
+            }),
+            );</div>
+            <div class="task">Напиши функцію getAllPropValues(arr, prop), яка отримує масив об'єктів і ім'я властивості. Повертає
+                масив значень певної властивості prop з кожного об'єкта в масиві.
+            
+                const products = [
+                { name: 'Радар', price: 1300, quantity: 4 },
+                { name: 'Сканер', price: 2700, quantity: 3 },
+                { name: 'Дроїд', price: 400, quantity: 7 },
+                { name: 'Захоплення', price: 1200, quantity: 2 },
+                ];
+            
+                const getAllPropValues = function (arr, prop) {
+                // твій код
+                };
+            
+                /*
+                * Викличи функції для перевірки працездатності твоєї реалізації.
+                */
+                console.log(getAllPropValues(products, 'name')); // ['Радар', 'Сканер', 'Дроїд', 'Захоплення']
+            
+                console.log(getAllPropValues(products, 'quantity')); // [4, 3, 7, 2]
+            
+                console.log(getAllPropValues(products, 'category')); // []</div>
+            <div class="task">Напиши функцію calculateTotalPrice(allProdcuts, productName), яка отримує масив об'єктів та ім'я
+                продукту (значення властивості name). Повертає загальну вартість продукту (ціна * кількість).
+            
+                Викличи функції для перевірки працездатності твоєї реалізації.
+            
+                const products = [
+                { name: 'Радар', price: 1300, quantity: 4 },
+                { name: 'Сканер', price: 2700, quantity: 3 },
+                { name: 'Дроїд', price: 400, quantity: 7 },
+                { name: 'Захоплення', price: 1200, quantity: 2 },
+                ];
+            
+                const calculateTotalPrice = function (allProdcuts, productName) {
+                // твій код
+                };
+            
+                /*
+                * Викличи функції для перевірки працездатності твоєї реалізації.
+                */
+                console.log(calculateTotalPrice(products, 'Радар')); // 5200
+            
+                console.log(calculateTotalPrice(products, 'Дроїд')); // 2800</div>
+    </main>
+    <script src="../AllTask.js"></script>
+</body>
+</html>

@@ -101,7 +101,40 @@ body {
     /* border: 1px solid #fafafa; */
     width: 1200px;
     height: 90vh;
-    top: 0;
+    top: 35px;
+    display: flex;
+    justify-content: space-around;
+    background: #000;
+    z-index: 10000000000;
+    display: none;
+}
+.window {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+.menu__right {
+    max-width: 500px;
+}
+.Theme {
+    display: flex;
+    flex-direction: column;
+}
+.Theme__title {
+    color: white;
+}
+.Theme__black {
+    color: white;
+}
+.Theme__white {
+    color: white;
+}
+.language {
+    color: white;
+}
+.More-about-me {
+    color: white;
 }
 .menu {
     width: 50px;
@@ -127,6 +160,13 @@ body {
     color: white;
     font-weight: 900;
     font-size: 24px;
+    font-family: Arial;
+    background: linear-gradient(to bottom right, #fafab1, black);
+    border: 3px solid #a8a870;
+   /*  border-color: #7a6403; */
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-text-stroke: 2px black;
 }
 .header__user {
     display: flex;
@@ -266,6 +306,42 @@ body {
 }
 .texts {
     width: 700px;
+    /* margin-bottom: 80px; */
+}
+.button-Oleg {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 20px;
+    align-items: center;
+}
+.GitHub {
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(#ffce5b, rgb(255, 255, 0));
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+    font-family: Arial;
+    border: 4px solid #000;
+    border-color: #9f830a;
+    /* -webkit-text-stroke: 0.3px white; */
+}
+.download-summary {
+    padding: 10px;
+    border-radius: 5px;
+    border: 4px solid #000;
+    background: linear-gradient(#ff7300, orange);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+    font-family: Arial;
+    /* -webkit-text-stroke: 0.3px white; */
+    border-color: #6b3509;
+}
+.GitHub:hover, .download-summary:hover {
+    transform: scale(1.1);
 }
 .text1 {
     color: rgb(0, 0, 0);
