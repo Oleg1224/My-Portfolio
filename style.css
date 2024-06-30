@@ -83,13 +83,15 @@ body {
     cursor: pointer;
     position: relative;
     z-index: 100;
-    transition: 0.5s;
+    transition: 1s;
+    border-radius: 50%;
 }
 /* .header__menu:hover {
     transform: scale(1.2);
 } */
 .header__menu.rotate {
     transform: rotate(360deg);
+    background: white;
 }
 /* .all__menu {
     position: relative;
@@ -146,7 +148,7 @@ body {
     top: 20px;
     background: #000;
     transform: scale(0);
-    transition: 1.2s;
+    transition: 1s;
     z-index: 90;
 }
 .menu.new {
