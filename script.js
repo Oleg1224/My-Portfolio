@@ -26,3 +26,10 @@ progectImg6.addEventListener('click', function() {
 progectSvg.addEventListener('click', function() {
     window.location.href = 'https://oleg1224.github.io/Summary/'
 })
+window.onload = function() {
+    let blackWinodw = document.querySelector('.blackWindow')
+    setTimeout(function() {
+        blackWinodw.style.opacity = '0'
+        blackWinodw.style.zIndex = '-1'
+    }, 500)
+}

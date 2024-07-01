@@ -38,6 +38,17 @@ body {
     background-repeat: no-repeat;
     transition: 1s;
 }
+.blackWindow {
+    position: absolute;
+    z-index: 9000;
+    opacity: 1;
+    background: #000;
+    width: 2000px;
+    height: 1000px;
+    left: 0;
+    top: -100px;
+    transition: 1s;
+}
 /* .next {
     position: absolute;
     width: 100%;
