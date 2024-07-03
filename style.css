@@ -114,12 +114,19 @@ body {
     /* border: 1px solid #fafafa; */
     width: 1200px;
     height: 90vh;
-    top: 35px;
+    top: 850px;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     background: #000;
     z-index: 10000000000;
-    display: none;
+    border-radius: 150px;
+    transition: 0.5s;
+    /* display: none; */
+}
+.menu__box.top {
+    position: absolute;
+    top: 35px;
 }
 .window {
     width: 300px;
@@ -133,21 +140,12 @@ body {
 .Theme {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
-.Theme__title {
+.grade, .language, .More-about-me {
     color: white;
-}
-.Theme__black {
-    color: white;
-}
-.Theme__white {
-    color: white;
-}
-.language {
-    color: white;
-}
-.More-about-me {
-    color: white;
+    font-weight: 900;
+    font-size: 34px;
 }
 .menu {
     width: 50px;
