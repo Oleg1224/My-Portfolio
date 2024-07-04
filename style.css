@@ -129,9 +129,9 @@ body {
     top: 35px;
 }
 .window {
-    width: 300px;
+    width: 370px;
     height: 500px;
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff; */
     border-radius: 20px;
 }
 .menu__right {
@@ -142,7 +142,7 @@ body {
     flex-direction: column;
     gap: 15px;
 }
-.grade, .language, .More-about-me {
+.grade, .language, .More-about-me, .my__email, .my__services {
     color: white;
     font-weight: 900;
     font-size: 34px;
