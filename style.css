@@ -142,10 +142,13 @@ body {
     flex-direction: column;
     gap: 15px;
 }
-.grade, .language, .More-about-me, .my__email, .my__services {
+.language, .More-about-me, .my__email, .my__services {
     color: white;
     font-weight: 900;
     font-size: 34px;
+}
+.grade {
+    display: flex;
 }
 .menu {
     width: 50px;
