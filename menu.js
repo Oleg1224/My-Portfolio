@@ -6,9 +6,10 @@ headerMenu.addEventListener('click', function() {
     if(menu.className==='menu') {
         menu.classList.add('new')
         headerMenu.classList.add('rotate')
-        headerMenu.src='./img/pngwing.comыаыаыва.png'
+        /* headerMenu.src='./img/pngwing.comыаыаыва.png' */
+        headerMenu.src="./img/luxa.org-color-pngwing.com (1).png"
+        /* headerMenu.src="./img/Белый крест.png" */
         menuBox.classList.add('top')
-        /* headerMenu.src = "./img/pngwing.com (13).png" */
         /* headerMenu.style.transform = "rotate(360deg)"; */
         /* menu.style.zIndex = '90' */
     }

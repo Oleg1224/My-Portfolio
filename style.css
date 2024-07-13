@@ -102,7 +102,7 @@ body {
 } */
 .header__menu.rotate {
     transform: rotate(360deg);
-    background: white;
+    background: transparent;
 }
 /* .all__menu {
     position: relative;

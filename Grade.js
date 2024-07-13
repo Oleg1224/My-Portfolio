@@ -53,3 +53,39 @@ StarImg5.addEventListener('mouseout', function() {
     StarImg4.src="./img/StarNotFull.png"
     StarImg5.src="./img/StarNotFull.png"
 })
+/* let StarImg1Src = StarImg1.src;
+let StarImg2Src = StarImg2.src;
+let StarImg3Src = StarImg3.src;
+let StarImg4Src = StarImg4.src;
+let StarImg5Src = StarImg5.src;
+let newSrc = "./img/Star.png"; */
+let StarImg1Src = StarImg1.src;
+let StarImg2Src = StarImg2.src;
+let StarImg3Src = StarImg3.src;
+let StarImg4Src = StarImg4.src;
+let StarImg5Src = StarImg5.src;
+/* StarImg1.addEventListener('click', function() {
+    if(StarImg1.src===StarImg1Src) {
+        StarImg1.src=newSrc
+    }
+    else {
+        StarImg1.src=StarImg1Src
+    }
+})
+StarImg2.addEventListener('click', function() {
+    if(StarImg1.src===StarImg1Src && StarImg2.src===StarImg2Src) {
+        StarImg1.src=newSrc
+        StarImg2.src=newSrc
+    }
+    else {
+        StarImg1.src=StarImg1Src
+        StarImg2.src=StarImg2Src
+    }
+}) */
+StarImg1.addEventListener('click', function() {
+    if (StarImg1.src.endsWith(StarImg1Src)) {
+        StarImg1.src = newSrc;
+    } else {
+        StarImg1.src = StarImg1Src;
+    }
+});
