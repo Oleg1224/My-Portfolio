@@ -151,7 +151,7 @@ body {
     display: flex;
     gap: 3px;
 }
-.star__img {
+.star__img1, .star__img2, .star__img3, .star__img4, .star__img5 {
     width: 50px;
 }
 .menu {
