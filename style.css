@@ -561,3 +561,46 @@ body {
     color: rgb(20, 114, 15);
     font-size: 20px;
 }
+
+/* Стилі для великих екранів (дисплей максимум 1199рх) */
+@media (max-width: 1199px) {
+    .slide:nth-child(1) .slide__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding-bottom: 350px;
+    }
+    .slide:nth-child(2) .slide__body {
+        justify-content: center;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-wrap: wrap;
+    }
+    .header__title {
+        text-align: center;
+    }
+}
+
+/* Стилі для середніх екранів (дисплей максимум 991рх) */
+    @media (max-width: 991px) {
+        .slide:nth-child(2) .slide__body {
+            /* justify-content: space-around; */
+            /* padding-left: 8px;
+            padding-right: 8px; */
+        }
+    }
+
+/* Стилі для малих екранів (дисплей максимум 767рх) */
+    @media (max-width: 767px) {
+        /* .slide:nth-child(2) .slide__body {
+            flex-direction: column;
+            justify-content: center;
+        } */
+    }
+
+/* Стилі для дуже малих екранів (дисплей максимум 575рх) */
+    @media (max-width: 575px) {}
