@@ -76,7 +76,7 @@ body {
     transform: rotate(180deg);
     /* right: -40px; */
     right: 0;
-    z-index: 1000;
+    z-index: 10000000000;
     cursor: pointer;
 }
 .header {
@@ -112,14 +112,14 @@ body {
 .menu__box {
     position: absolute;
     /* border: 1px solid #fafafa; */
-    width: 1200px;
+    width: 100%;
     height: 90vh;
     top: 850px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background: #000;
-    z-index: 10000000000;
+    z-index: 100;
     border-radius: 150px;
     transition: 0.5s;
     /* display: none; */
@@ -129,18 +129,50 @@ body {
     top: 35px;
 }
 .window {
+    position: relative;
     width: 370px;
     height: 500px;
-    /* border: 1px solid #ffffff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid #700a0a; */
     border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.window::before {
+    content: '';
+    position: absolute;
+    inset: 0px;
+    border-radius: 16px;
+    background-color: rgb(23, 57, 114);
+    box-shadow: 0 0 20px black;
+    animation: rotate-animation 4s linear infinite;
+}
+.window::after {
+    content: '';
+    position: absolute;
+    inset: 0px;
+    background-color: white;
+    box-shadow: 0 0 20px black;
+}
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .menu__right {
     max-width: 500px;
 }
 .Theme {
+    width: 350px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    /* border: 1px solid #ff0000; */
 }
 .language, .More-about-me, .my__email, .my__services {
     color: white;
@@ -337,7 +369,7 @@ body {
 .GitHub {
     padding: 10px;
     border-radius: 5px;
-    background: linear-gradient(#ffce5b, rgb(255, 255, 0));
+    background: linear-gradient(#ffce5b, #ffff00);
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: 900;
@@ -360,7 +392,12 @@ body {
     /* -webkit-text-stroke: 0.3px white; */
     border-color: #6b3509;
 }
-.GitHub:hover, .download-summary:hover {
+.GitHub:hover {
+    box-shadow: 0 0 30px #ffff00;
+    transform: scale(1.1);
+}
+.download-summary:hover {
+    box-shadow: 0 0 30px orange;
     transform: scale(1.1);
 }
 .text1 {
@@ -561,7 +598,15 @@ body {
     color: rgb(20, 114, 15);
     font-size: 20px;
 }
-
+.imageOleg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.texts__buttonOleg {
+    display: none;
+}
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
 @media (max-width: 1199px) {
     .slide:nth-child(1) .slide__body {
@@ -572,6 +617,25 @@ body {
         text-align: center;
         gap: 30px;
         padding-bottom: 350px;
+    }
+    .header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .button-Oleg {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .leaf3 {
+        display: none;
+    }
+    .menu__box {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        width: 100%;
     }
     .slide:nth-child(2) .slide__body {
         justify-content: center;
@@ -587,11 +651,11 @@ body {
 
 /* Стилі для середніх екранів (дисплей максимум 991рх) */
     @media (max-width: 991px) {
-        .slide:nth-child(2) .slide__body {
-            /* justify-content: space-around; */
-            /* padding-left: 8px;
-            padding-right: 8px; */
-        }
+        /* .menu__box {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        } */
     }
 
 /* Стилі для малих екранів (дисплей максимум 767рх) */
@@ -603,7 +667,68 @@ body {
             justify-content: space-around;
             padding-bottom: 500px;
         }
+        .slide:nth-child(1) .slide__body {
+            padding: 0;
+        }
+        .imageOleg {
+            gap: 50px;
+        }
+        .Theme {
+            align-items: center;
+        }
+        .menu__box {
+            overflow: scroll;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0px;
+            /* border: 1px solid #f40000; */
+            left: 0;
+        }
+        .header__menu {
+            z-index: 10000000000;
+        }
+        .texts__buttonOleg {
+            display: block;
+            font-size: 28px;
+            z-index: 1;
+            padding: 5px;
+            width: 200px;
+            border-radius: 3px;
+            border: 4px solid #000;
+            background: linear-gradient(#ff7300, orange);
+            color: rgb(0, 0, 0);
+            font-weight: 900;
+            font-family: Arial;
+            border-color: #6b3509;
+        }
+        .texts__buttonOleg:hover {
+            box-shadow: 0 0 30px orange;
+            transform: scale(1.1);
+        }
+        .paralax {
+            display: none;
+        }
+        .texts {
+            display: none;
+        }
     }
 
 /* Стилі для дуже малих екранів (дисплей максимум 575рх) */
-    @media (max-width: 575px) {}
+    @media (max-width: 575px) {
+        /* .header {
+            padding-left: 20px;
+            padding-right: 20px;
+        } */
+        .window {
+            width: 320px;
+            object-fit: cover;
+            /* height: 100%; */
+        }
+    }
+
+    @media (max-width: 410px) {
+        .header__title {
+            display: none;
+        }
+    }
