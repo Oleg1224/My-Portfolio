@@ -167,10 +167,10 @@ body {
     /* opacity: 0.5; */
 }
 @keyframes spin {
-    from {
+    0% {
         --angle: 0deg;
     }
-    to {
+    100% {
         --angle: 360deg
     }
 }
