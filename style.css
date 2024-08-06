@@ -131,21 +131,50 @@ body {
 .window {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 }
 .box__window {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 5px solid #700a0a; */
-    overflow: hidden;
-    border-radius: 10px;
     /* border-radius: 20px; */
-    box-sizing: border-box;
     position: relative;
     width: 370px;
     height: 500px;
 }
-.box__window1 {
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.box__window::after, .box__window::before {
+    --angle: 0deg;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), red, rgb(101, 126, 194), orange);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 20px;
+    animation: spin 3s linear infinite;
+}
+.box__window::before {
+    filter: blur(1.5rem);
+    /* opacity: 0.5; */
+}
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg
+    }
+}
+/* .box__window1 {
     position: absolute;
     left: -500px;
     top: 0px;
@@ -220,7 +249,7 @@ body {
     50% {
         opacity: 0.5;
     }
-}
+} */
 .menu__right {
     max-width: 500px;
 }
@@ -243,6 +272,9 @@ body {
 .star__img1, .star__img2, .star__img3, .star__img4, .star__img5 {
     width: 50px;
 }
+/* .star__img1:hover, .star__img2:hover, .star__img3:hover, .star__img4:hover, .star__img5:hover {
+    transform: scale(1.2);
+} */
 .menu {
     width: 50px;
     height: 50px;
