@@ -137,32 +137,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-radius: 20px; */
+    border-radius: 20px;
     position: relative;
     width: 370px;
     height: 500px;
 }
-@property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-.box__window::after, .box__window::before {
-    --angle: 0deg;
+.box__window::after {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), red, rgb(101, 126, 194), orange);
+    background-image: conic-gradient(from var(--angle, 0deg), red, rgb(101, 126, 194), orange);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
-    padding: 3px;
+    padding: 5px;
     border-radius: 20px;
     animation: spin 3s linear infinite;
 }
 .box__window::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(red, rgb(101, 126, 194), orange);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+    border-radius: 20px;
+    animation: spin 3s linear infinite;
     filter: blur(1.5rem);
     /* opacity: 0.5; */
 }
@@ -171,8 +177,13 @@ body {
         --angle: 0deg;
     }
     100% {
-        --angle: 360deg
+        --angle: 360deg;
     }
+}
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
 }
 /* .box__window1 {
     position: absolute;
