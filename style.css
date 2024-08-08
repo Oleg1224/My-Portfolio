@@ -132,6 +132,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    /* display: none; */
 }
 .box__window {
     display: flex;
@@ -141,50 +142,75 @@ body {
     position: relative;
     width: 370px;
     height: 500px;
+    padding: 7px;
+    overflow: hidden;
 }
 .box__window::after {
     content: '';
     position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: conic-gradient(from var(--angle, 0deg), red, rgb(101, 126, 194), orange);
+    height: 1000px;
+    width: 1000px;
+    background: conic-gradient(
+        red,
+        rgb(255, 102, 0),
+        rgb(255, 187, 0),
+        rgb(255, 238, 0),
+        rgb(189, 0, 0),
+        rgb(255, 175, 63),
+        rgb(160, 155, 0),
+        rgb(255, 91, 91),
+        rgb(223, 55, 9),
+        rgb(245, 90, 48),
+        rgb(96, 19, 19),
+        rgb(165, 44, 38),
+        rgb(165, 93, 38),
+        rgb(255, 113, 106),
+        rgb(215, 126, 0),
+        rgb(255, 251, 22),
+        rgb(255, 252, 73),
+        rgb(255, 88, 22),
+        rgb(255, 76, 22),
+        rgb(255, 22, 22)
+    );
+    /* background-image: conic-gradient(red, rgb(101, 126, 194), orange); */
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
     padding: 5px;
     border-radius: 20px;
-    animation: spin 3s linear infinite;
+    animation: spin 7s linear infinite;
+    transition: 1s;
 }
-.box__window::before {
+/* .box__window::before {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(red, rgb(101, 126, 194), orange);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
     padding: 5px;
     border-radius: 20px;
-    animation: spin 3s linear infinite;
+    animation: spin 4s linear infinite;
     filter: blur(1.5rem);
-    /* opacity: 0.5; */
-}
+} */
 @keyframes spin {
     0% {
-        --angle: 0deg;
+        transform: rotate(0deg);
+       /*  --angle: 0deg; */
     }
     100% {
-        --angle: 360deg;
+        transform: rotate(360deg);
+       /*  --angle: 360deg; */
     }
 }
-@property --angle {
+/* @property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
-}
+} */
 /* .box__window1 {
     position: absolute;
     left: -500px;
