@@ -142,7 +142,7 @@ body {
     height: 100%;
     /* translate: -50% -50%; */
     left: -120px;
-    animation: woter 5s infinite ease-in-out alternate;
+    animation: woter 10s infinite cubic-bezier(0.21, 0.13, 0.81, 0.93) alternate;
     /* border: 1px solid #ff0000; */
 }
 .woter2 {
@@ -151,7 +151,7 @@ body {
     width: 1700px;
     height: 100%;
     left: -1820px;
-    animation: woter2 5s infinite ease-in-out alternate;
+    animation: woter2 10s infinite cubic-bezier(0.21, 0.13, 0.81, 0.93) alternate;
 }
 @keyframes woter {
     0% {
