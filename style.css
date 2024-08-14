@@ -213,9 +213,13 @@ body {
         rgb(255, 76, 22),
         rgb(255, 22, 22)
     ); */
+    /* background: conic-gradient(
+        transparent, grey, transparent, grey, transparent
+    ); */
     background: conic-gradient(
-        rgb(70, 70, 70), rgb(74, 67, 67), rgb(6, 52, 6), grey
+        #012c01, black, grey, #012c01, black, grey, #012c01, black
     );
+    /* #464646, #4a4343 */
     /* background-image: conic-gradient(red, rgb(101, 126, 194), orange); */
     top: 50%;
     left: 50%;
@@ -223,8 +227,18 @@ body {
     z-index: -1;
     padding: 5px;
     border-radius: 20px;
-    animation: spin 7s linear infinite;
+    animation: spin 3s linear infinite;
     transition: 1s;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+       /*  --angle: 0deg; */
+    }
+    100% {
+        transform: rotate(360deg);
+       /*  --angle: 360deg; */
+    }
 }
 /* .box__window::before {
     content: '';
@@ -240,16 +254,6 @@ body {
     animation: spin 4s linear infinite;
     filter: blur(1.5rem);
 } */
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-       /*  --angle: 0deg; */
-    }
-    100% {
-        transform: rotate(360deg);
-       /*  --angle: 360deg; */
-    }
-}
 /* @property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
@@ -348,6 +352,10 @@ body {
     font-weight: 900;
     font-size: 34px;
     z-index: 2;
+}
+.language:hover, .More-about-me:hover, .my__email:hover, .my__services:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 .grade {
     display: flex;
