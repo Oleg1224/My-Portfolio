@@ -10,6 +10,7 @@ headerMenu.addEventListener('click', function() {
         headerMenu.src="./img/luxa.org-color-pngwing.com (1).png"
         /* headerMenu.src="./img/Белый крест.png" */
         menuBox.classList.add('top')
+        /* menuBox.style.display='block' */
         /* headerMenu.style.transform = "rotate(360deg)"; */
         /* menu.style.zIndex = '90' */
     }
@@ -18,6 +19,7 @@ headerMenu.addEventListener('click', function() {
         headerMenu.classList.remove('rotate')
         headerMenu.src='./img/pngwing.com (13).png'
         menuBox.classList.remove('top')
+        /* menuBox.style.display='none' */
         /* headerMenu.src = './img/pngwing.comыаыаыва' */
         /* menu.style.zIndex = '80' */
     }
