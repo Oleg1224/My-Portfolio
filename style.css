@@ -700,10 +700,6 @@ body {
     gap: 50px;
     /* justify-content: space-around; */
 }
-/* .slide__body:last-child {
-    
-} */
-/* .slide:nth-child(3) .slide__body */
 .task {
     text-align: center;
     display: flex;
@@ -809,6 +805,8 @@ body {
         align-items: center;
         text-align: center;
         gap: 30px;
+        overflow-y: scroll;
+        overflow-x: hidden;
         /* padding-bottom: 350px; */
         /* overflow: hidden; */
     }
@@ -841,6 +839,9 @@ body {
     .header__title {
         text-align: center;
     }
+    .leaf2 {
+        display: none;
+    }
 }
 
 /* Стилі для середніх екранів (дисплей максимум 991рх) */
@@ -850,6 +851,13 @@ body {
             flex-wrap: wrap;
             flex-direction: column;
         } */
+        .slide:nth-child(1) .slide__body {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        .leaf2 {
+            display: none;
+        }
     }
 
 /* Стилі для малих екранів (дисплей максимум 767рх) */
@@ -863,6 +871,8 @@ body {
         }
         .slide:nth-child(1) .slide__body {
             padding: 0;
+            overflow: hidden;
+            gap: 0;
         }
         .imageOleg {
             gap: 50px;
@@ -900,14 +910,21 @@ body {
             box-shadow: 0 0 30px orange;
             transform: scale(1.1);
         }
+        .text2 {
+            display: none;
+        }
+        .text1 {
+            display: none;
+        }
         .paralax {
             display: none;
         }
-        .texts {
-            display: none;
+        .download-summary {
+            border: 4px solid #4a8f33;
+            background: linear-gradient(#5aac45, #00430a);
         }
-        .woter__animation {
-            overflow-x: hidden;
+        .download-summary:hover {
+            box-shadow: 0 0 30px rgb(0, 255, 0);
         }
     }
 
