@@ -90,7 +90,7 @@ body {
     justify-content: space-between;
     padding: 20px 0 10px 0;
     position: relative;
-    top: 100px;
+    top: 0px;
 }
 .header__menu {
     width: 50px;
