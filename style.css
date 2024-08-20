@@ -810,15 +810,29 @@ body {
     border-radius: 20px;
     text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.605);
     -webkit-text-stroke: #000 0.5px;
-    z-index: 200000000000000;
-    transform: scale(0) rotate(0deg);
-    left: -1000px;
+    z-index: 20000000000;
+    transform: translateX(-1000px);
+    /* left: -1000px; */
     transition: 1s;
 }
 .Mobile_text.text {
-    transform: scale(1) rotate(360deg) rotate(360deg);
-    left: 100px;
+    transform: translateX(0);
+    /* animation: translate 1s linear; */
 }
+/* @keyframes translate {
+    0%{
+        transform: translate(-1000px) scale(1) rotate(360deg);
+    }
+    100%{
+    }
+}
+@keyframes translate {
+    0%{
+        transform: translate(-1000px);
+    }
+    100%{
+    }
+} */
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
 @media (max-width: 1199px) {
     .slide:nth-child(1) .slide__body {
@@ -949,6 +963,10 @@ body {
         .download-summary:hover {
             box-shadow: 0 0 30px rgb(0, 255, 0);
         }
+    }
+
+    @media (max-width: 600px) {
+
     }
 
 /* Стилі для дуже малих екранів (дисплей максимум 575рх) */
