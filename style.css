@@ -965,28 +965,34 @@ body {
         }
     }
 
-    @media (max-width: 600px) {
-
-    }
-
 /* Стилі для дуже малих екранів (дисплей максимум 575рх) */
     @media (max-width: 575px) {
-        /* .header {
-            padding-left: 20px;
-            padding-right: 20px;
-        } */
-        /* .menu__box {
-            border: 1px solid red;
-            width: 500px;
-        } */
+    }
+
+    @media (max-width: 560px) {
+        .button-Oleg {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     @media (max-width: 500px) {
         .header__title {
             display: none;
         }
+        .img {
+            width: 280px;
+        }
+        .texts__buttonOleg {
+            width: 150px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        /* .img {
+            width: 20px;
+        } */
         .button-Oleg {
-            display: flex;
-            flex-direction: column;
+            display: none;
         }
     }
