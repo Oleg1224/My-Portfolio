@@ -1,9 +1,9 @@
-let text2 = document.querySelector('.text2');
+let MobileText = document.querySelector('.Mobile_text');
+let textsButtonOleg = document.querySelector('.texts__buttonOleg');
 textsButtonOleg.addEventListener('click', function() {
-    if(text2.className==='text2') {
-        text2.classList.add('texts')
+    if (MobileText.className==='Mobile_text') {
+        MobileText.classList.add('text');
+    } else {
+        MobileText.classList.remove('text');
     }
-    else {
-        text2.classList.remove('texts')
-    }
-})
+});

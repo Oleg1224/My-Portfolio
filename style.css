@@ -796,6 +796,29 @@ body {
 .texts__buttonOleg {
     display: none;
 }
+.Mobile_text {
+    position: absolute;
+    max-width: 500px;
+    height: 500px;
+    border: 5px solid #311d1d;
+    color: rgb(107, 38, 38);
+    font-weight: 900;
+    font-size: 30px;
+    top: 0;
+    background: #000;
+    padding: 3px;
+    border-radius: 20px;
+    text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.605);
+    -webkit-text-stroke: #000 0.5px;
+    z-index: 200000000000000;
+    transform: scale(0) rotate(0deg);
+    left: -1000px;
+    transition: 1s;
+}
+.Mobile_text.text {
+    transform: scale(1) rotate(360deg) rotate(360deg);
+    left: 100px;
+}
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
 @media (max-width: 1199px) {
     .slide:nth-child(1) .slide__body {
@@ -940,11 +963,12 @@ body {
         } */
     }
 
-    @media (max-width: 520px) {
+    @media (max-width: 500px) {
         .header__title {
             display: none;
         }
-        /* .slide:nth-child(2) .slide__body {
-            overflow-y: hidden;
-        } */
+        .button-Oleg {
+            display: flex;
+            flex-direction: column;
+        }
     }
