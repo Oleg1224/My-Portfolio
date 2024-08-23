@@ -32,6 +32,54 @@ html{
 scroll-behavior: smooth; 
 overflow: hidden;
 }
+.beta_bgraund {
+    position: absolute;
+    width: 1500px;
+    height: 1000px;
+    background: #000;
+    z-index: 100000000;
+}
+.beta {
+    position: relative;
+    width: 650px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #212122;
+    color: #ecf0f1;
+    padding: 10px;
+    text-align: center;
+    z-index: 900;
+    margin: 0 auto;
+    top: 12%;
+    border-radius: 15px;
+    border: 2px solid orange;
+    gap: 15px;
+}
+.beta_button {
+    padding: 5px;
+    color: black;
+    background: rgb(255, 170, 11);
+    font-weight: 800;
+    font-size: 34px;
+    width: 150px;
+    font-family: sans-serif;
+    border: 2.5px solid rgb(159, 21, 21);
+    border-radius: 10px;
+}
+.beta_button:hover {
+    box-shadow:  0 0 20px red;
+}
+.beta_title {
+    font-weight: 900;
+    font-size: 55px;
+}
+.beta_text {
+    font-weight: 800;
+    font-size: 40px;
+}
 body {
     background-image: url(./img/1647941800_3-abrakadabra-fun-p-paporotnik-na-chernom-fone-3.jpg);
     background-size: cover;
@@ -50,7 +98,7 @@ body {
     left: 0;
     top: -100px;
     transition: 1s;
-    /* display: none; */
+    display: none;
 }
 /* .next {
     position: absolute;
@@ -79,7 +127,7 @@ body {
     transform: rotate(180deg);
     /* right: -40px; */
     right: 0;
-    z-index: 10000000000;
+    z-index: 10000000;
     cursor: pointer;
 }
 .header {
@@ -989,9 +1037,6 @@ body {
     }
 
     @media (max-width: 400px) {
-        /* .img {
-            width: 20px;
-        } */
         .button-Oleg {
             display: none;
         }
