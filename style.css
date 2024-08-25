@@ -38,6 +38,7 @@ overflow: hidden;
     height: 1000px;
     background: #000;
     z-index: 100000000;
+    /* display: none; */
 }
 .beta {
     position: relative;
