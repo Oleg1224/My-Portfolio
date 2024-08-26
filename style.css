@@ -851,7 +851,7 @@ body {
     max-width: 500px;
     height: 500px;
     border: 5px solid #311d1d;
-    color: rgb(107, 38, 38);
+    color: #6b2626;
     font-weight: 900;
     font-size: 30px;
     top: 0;
@@ -1033,16 +1033,50 @@ body {
         .header__title {
             display: none;
         }
-        .img {
-            width: 280px;
-        }
         .texts__buttonOleg {
             width: 150px;
         }
-    }
-
-    @media (max-width: 400px) {
         .button-Oleg {
             display: none;
+        }
+    }
+
+    @media (max-width: 540px) {
+        .Mobile_text {
+            font-size: 27px;
+            margin: 0 20px 0 20px;
+        }
+    }
+
+    @media (max-width: 465px) {
+        .Mobile_text {
+            /* top: 85px; */
+            height: 450px;
+            overflow: scroll;
+            padding: 10px;
+        }
+        .Mobile_text::-webkit-scrollbar-thumb {
+            background-color: #6b2626;
+            border-radius: 5px;
+        }
+        .Mobile_text::-webkit-scrollbar {
+            width: 6px;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .img {
+            width: 280px;
+        }
+        .box__window {
+            width: 300px;
+            height: 450px;
+            margin: 0 5px 0 5px;
+        }
+    }
+
+    @media (max-width: 350px) {
+        .menu__box {
+            overflow-x: hidden;
         }
     }
