@@ -1013,6 +1013,9 @@ body {
         .download-summary:hover {
             box-shadow: 0 0 30px rgb(0, 255, 0);
         }
+        .woter__animation {
+            overflow-x: hidden;
+        }
     }
 
 /* Стилі для дуже малих екранів (дисплей максимум 575рх) */
