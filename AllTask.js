@@ -5,3 +5,7 @@ window.onload = function() {
         black.style.zIndex = '-1'
     }, 500)
 }
+let black = document.querySelector('.black')
+setTimeout(function() {
+    black.style.display='none'
+}, 1000)
